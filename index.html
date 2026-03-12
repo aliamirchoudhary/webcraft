@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WebCraft – Premium Web Development</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Animated Background Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- ===================== HEADER ===================== -->
+  <header id="site-header">
+    <div class="header-inner">
+      <a href="#home" class="logo-wrap">
+        <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <polygon points="20,2 38,11 38,29 20,38 2,29 2,11" stroke="#99FFCC" stroke-width="2" fill="none"/>
+          <polygon points="20,8 32,14 32,26 20,32 8,26 8,14" stroke="#99FFCC" stroke-width="1.5" fill="rgba(153,255,204,0.08)"/>
+          <text x="20" y="25" text-anchor="middle" font-family="Clash Display, sans-serif" font-size="11" font-weight="800" fill="#99FFCC">W</text>
+        </svg>
+        <span class="logo-name">WebCraft</span>
+      </a>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#kinds" class="nav-link">Kinds</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#order" class="nav-link nav-cta">Order</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== MAIN ===================== -->
+  <main>
+
+    <!-- ── HOME ── -->
+    <section id="home" class="section section-home">
+      <div class="home-content">
+        <div class="home-badge reveal">Available for projects</div>
+        <div class="home-logo-wrap reveal delay-1">
+          <svg class="home-logo" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="40,4 76,22 76,58 40,76 4,58 4,22" stroke="#99FFCC" stroke-width="2.5" fill="none"/>
+            <polygon points="40,14 66,27 66,53 40,66 14,53 14,27" stroke="#99FFCC" stroke-width="1.5" fill="rgba(153,255,204,0.06)"/>
+            <text x="40" y="50" text-anchor="middle" font-family="Clash Display, sans-serif" font-size="22" font-weight="800" fill="#99FFCC">W</text>
+          </svg>
+        </div>
+        <h1 class="home-title reveal delay-2">
+          <span class="title-line">Web</span><span class="title-line accent">Craft</span>
+        </h1>
+        <p class="home-sub reveal delay-3">Building digital experiences that convert visitors into clients.</p>
+        <div class="home-actions reveal delay-4">
+          <a href="#contact" class="btn btn-outline scroll-link">Contact Me</a>
+          <a href="#order" class="btn btn-primary scroll-link">Order Now</a>
+        </div>
+      </div>
+      <div class="scroll-hint reveal delay-5">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ── ABOUT ── -->
+    <section id="about" class="section section-about">
+      <div class="container">
+        <div class="section-label reveal">About</div>
+        <div class="about-grid">
+          <div class="about-text reveal delay-1">
+            <h2 class="section-title">Crafting the web,<br /><span class="accent">one pixel at a time.</span></h2>
+            <p>I'm a passionate full-stack web developer who builds high-performance websites and web applications from the ground up. From sleek portfolios to feature-rich business platforms, I bring clean code and stunning design to every project.</p>
+            <p>I'm just getting started — and that means <em>you get my full attention</em>, competitive rates, and a developer who will go the extra mile to prove himself.</p>
+            <a href="https://ali-aamir-portfolio.vercel.app/" target="_blank" rel="noopener" class="btn btn-outline mt-1">View Portfolio →</a>
+          </div>
+          <div class="about-side reveal delay-2">
+            <div class="about-card">
+              <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Years Learning</span></div>
+              <div class="stat"><span class="stat-num">10+</span><span class="stat-label">Techs Mastered</span></div>
+              <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Dedicated</span></div>
+            </div>
+            <div class="social-row">
+              <a href="mailto:aliamirchoudhary@gmail.com" class="social-btn" aria-label="Email" title="aliamirchoudhary@gmail.com">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
+              </a>
+              <a href="https://www.facebook.com/share/177cJ6ccx3/" class="social-btn" aria-label="Facebook" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+              <a href="https://www.instagram.com/maacmarketingservice/" class="social-btn" aria-label="Instagram" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+              <a href="https://x.com/maacaffliate?t=vc7ALr4cu8ciZkAfUTeR5A&s=09" class="social-btn" aria-label="X / Twitter" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24"><path d="M4 4l16 16M20 4L4 20"/></svg>
+              </a>
+              <a href="https://www.fiverr.com/s/2Kg9QKV" class="social-btn" aria-label="Fiverr" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24"><text x="4" y="18" font-size="14" font-weight="bold" fill="currentColor">F</text></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/muhammad-ali-aamir2558" class="social-btn" aria-label="LinkedIn" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+              <a href="https://github.com/aliamirchoudhary" class="social-btn" aria-label="GitHub" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SERVICES ── -->
+    <section id="services" class="section section-services">
+      <div class="container">
+        <div class="section-label reveal">Services</div>
+        <h2 class="section-title reveal delay-1">What I <span class="accent">Offer</span></h2>
+        <p class="section-sub reveal delay-2">Tailored packages for every stage of your digital journey.</p>
+        <div class="cards-grid reveal delay-3">
+
+          <article class="card service-card" data-service="Frontend" data-modal="modal-frontend">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3 class="card-title">Frontend</h3>
+            <p class="card-price">Starting at <strong>$299</strong></p>
+            <p class="card-desc">Pixel-perfect UI built with modern HTML, CSS & JavaScript.</p>
+            <button class="btn btn-primary btn-sm order-from-service" data-service="Frontend">Order</button>
+          </article>
+
+          <article class="card service-card" data-service="Backend" data-modal="modal-backend">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3 class="card-title">Backend</h3>
+            <p class="card-price">Starting at <strong>$399</strong></p>
+            <p class="card-desc">Robust server-side logic, APIs, and database architecture.</p>
+            <button class="btn btn-primary btn-sm order-from-service" data-service="Backend">Order</button>
+          </article>
+
+          <article class="card service-card featured" data-service="Full-Stack" data-modal="modal-fullstack">
+            <div class="card-badge">Popular</div>
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3 class="card-title">Frontend + Backend</h3>
+            <p class="card-price">Starting at <strong>$599</strong></p>
+            <p class="card-desc">Complete web solution — both UI and server-side covered.</p>
+            <button class="btn btn-primary btn-sm order-from-service" data-service="Full-Stack">Order</button>
+          </article>
+
+          <article class="card service-card" data-service="Full-Stack + Admin" data-modal="modal-fullstackadmin">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 class="card-title">Full-Stack + Admin</h3>
+            <p class="card-price">Starting at <strong>$899</strong></p>
+            <p class="card-desc">Everything above plus a custom admin dashboard for easy management.</p>
+            <button class="btn btn-primary btn-sm order-from-service" data-service="Full-Stack + Admin">Order</button>
+          </article>
+
+          <article class="card service-card" data-service="Maintenance" data-modal="modal-maintenance">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3 class="card-title">Maintenance</h3>
+            <p class="card-price">Starting at <strong>$79/mo</strong></p>
+            <p class="card-desc">Ongoing updates, monitoring, backups, and support.</p>
+            <button class="btn btn-primary btn-sm order-from-service" data-service="Maintenance">Order</button>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── KINDS ── -->
+    <section id="kinds" class="section section-kinds">
+      <div class="container">
+        <div class="section-label reveal">Kinds</div>
+        <h2 class="section-title reveal delay-1">Website <span class="accent">Types</span></h2>
+        <p class="section-sub reveal delay-2">Every industry has unique needs — I build for all of them.</p>
+        <div class="cards-grid kinds-grid reveal delay-3">
+
+          <article class="card kind-card" data-kind="menu" data-modal="modal-kind-menu">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3zm0 0v7"/></svg>
+            </div>
+            <h3 class="card-title">Menu / Restaurant</h3>
+            <p class="card-desc">Appetizing menus, reservations & online ordering.</p>
+          </article>
+
+          <article class="card kind-card" data-kind="portfolio" data-modal="modal-kind-portfolio">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            </div>
+            <h3 class="card-title">Portfolio</h3>
+            <p class="card-desc">Showcase your work with style and impact.</p>
+          </article>
+
+          <article class="card kind-card" data-kind="business" data-modal="modal-kind-business">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <h3 class="card-title">Business</h3>
+            <p class="card-desc">Professional presence for companies of any size.</p>
+          </article>
+
+          <article class="card kind-card" data-kind="school" data-modal="modal-kind-school">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <h3 class="card-title">School / Hospital</h3>
+            <p class="card-desc">Information-rich portals for education & healthcare.</p>
+          </article>
+
+          <article class="card kind-card" data-kind="hotel" data-modal="modal-kind-hotel">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24"><path d="M2 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8"/><path d="M4 10V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4"/><line x1="12" y1="4" x2="12" y2="10"/><rect x="2" y="20" width="20" height="2"/></svg>
+            </div>
+            <h3 class="card-title">Hotel</h3>
+            <p class="card-desc">Elegant booking systems and room showcases.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CONTACT ── -->
+    <section id="contact" class="section section-contact">
+      <div class="container">
+        <div class="section-label reveal">Contact</div>
+        <h2 class="section-title reveal delay-1">Let's <span class="accent">Talk</span></h2>
+        <p class="section-sub reveal delay-2">Have a project in mind? Drop a message and I'll reply within 24 hours.</p>
+        <div class="contact-grid">
+          <div class="contact-socials reveal delay-1">
+            <h3>Find me on</h3>
+            <div class="social-list">
+              <a href="mailto:aliamirchoudhary@gmail.com" class="social-link-full">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
+                aliamirchoudhary@gmail.com
+              </a>
+              <a href="https://www.facebook.com/share/177cJ6ccx3/" class="social-link-full" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                Facebook
+              </a>
+              <a href="https://www.instagram.com/maacmarketingservice/" class="social-link-full" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                Instagram
+              </a>
+              <a href="https://x.com/maacaffliate?t=vc7ALr4cu8ciZkAfUTeR5A&s=09" class="social-link-full" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24"><path d="M4 4l16 16M20 4L4 20"/></svg>
+                X (Twitter)
+              </a>
+              <a href="https://www.fiverr.com/s/2Kg9QKV" class="social-link-full" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24"><text x="3" y="19" font-size="16" font-weight="bold" fill="currentColor">F</text></svg>
+                Fiverr
+              </a>
+              <a href="https://www.linkedin.com/in/muhammad-ali-aamir2558" class="social-link-full" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                LinkedIn
+              </a>
+              <a href="https://github.com/aliamirchoudhary" class="social-link-full" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+          <form class="contact-form reveal delay-2" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="c-name">Name</label>
+              <input type="text" id="c-name" name="name" placeholder="Your name" required />
+              <span class="field-error"></span>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="c-email">Email</label>
+                <input type="email" id="c-email" name="email" placeholder="you@example.com" required />
+                <span class="field-error"></span>
+              </div>
+              <div class="form-group">
+                <label for="c-confirm-email">Confirm Email</label>
+                <input type="email" id="c-confirm-email" name="confirm-email" placeholder="Confirm email" required />
+                <span class="field-error"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="c-subject">Subject</label>
+              <select id="c-subject" name="subject">
+                <option value="">Select a subject</option>
+                <option value="general">General Inquiry</option>
+                <option value="quote">Quote</option>
+                <option value="support">Support</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="c-message">Message</label>
+              <textarea id="c-message" name="message" rows="5" placeholder="Tell me about your project or question..." required></textarea>
+              <span class="field-error"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            <div class="form-success" id="contact-success" hidden>✓ Message sent! I'll be in touch soon.</div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── ORDER ── -->
+    <section id="order" class="section section-order">
+      <div class="container">
+        <div class="section-label reveal">Order</div>
+        <h2 class="section-title reveal delay-1">Start Your <span class="accent">Project</span></h2>
+        <p class="section-sub reveal delay-2">Fill in the details below and I'll get back to you with a tailored quote.</p>
+
+        <!-- Pre-filled banner -->
+        <div class="order-banner" id="order-banner" hidden>
+          <div class="banner-content">
+            <span class="banner-icon">🛒</span>
+            <span class="banner-text">Ordering: <strong id="banner-service-name"></strong> — complete the form below.</span>
+          </div>
+          <button class="banner-change" id="banner-change-btn">Change Service</button>
+        </div>
+
+        <form class="order-form reveal delay-3" id="order-form" novalidate>
+
+          <!-- Service Selection -->
+          <div class="order-service-area" id="order-service-area">
+            <h3 class="service-area-title">Select a Service</h3>
+            <div class="service-radio-group">
+              <label class="radio-label"><input type="radio" name="service" value="Frontend" /> <span>Frontend</span></label>
+              <label class="radio-label"><input type="radio" name="service" value="Backend" /> <span>Backend</span></label>
+              <label class="radio-label"><input type="radio" name="service" value="Full-Stack" /> <span>Full-Stack</span></label>
+              <label class="radio-label"><input type="radio" name="service" value="Full-Stack + Admin" /> <span>Full-Stack + Admin</span></label>
+              <label class="radio-label"><input type="radio" name="service" value="Maintenance" /> <span>Maintenance</span></label>
+            </div>
+            <span class="field-error" id="service-error"></span>
+          </div>
+
+          <!-- Order Fields -->
+          <div class="order-fields">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="o-name">Name <span class="required">*</span></label>
+                <input type="text" id="o-name" name="name" placeholder="Your full name" required />
+                <span class="field-error"></span>
+              </div>
+              <div class="form-group">
+                <label for="o-qty">Quantity <span class="required">*</span></label>
+                <input type="number" id="o-qty" name="quantity" min="1" value="1" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="o-email">Email <span class="required">*</span></label>
+                <input type="email" id="o-email" name="email" placeholder="you@example.com" required />
+                <span class="field-error"></span>
+              </div>
+              <div class="form-group">
+                <label for="o-confirm-email">Confirm Email <span class="required">*</span></label>
+                <input type="email" id="o-confirm-email" name="confirm-email" placeholder="Confirm email" required />
+                <span class="field-error"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="o-desc">Project Description</label>
+              <textarea id="o-desc" name="description" rows="5" placeholder="Tell me about your project — goals, audience, features you need..."></textarea>
+            </div>
+            <div class="form-group">
+              <label for="o-timeline">Timeline</label>
+              <select id="o-timeline" name="timeline">
+                <option value="">Select a timeline (optional)</option>
+                <option value="asap">ASAP</option>
+                <option value="1-2weeks">1–2 Weeks</option>
+                <option value="3-4weeks">3–4 Weeks</option>
+                <option value="1-3months">1–3 Months</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Submit Order</button>
+            <div class="form-success" id="order-success" hidden>✓ Order submitted! I'll review and respond within 24 hours.</div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer id="site-footer">
+    <div class="footer-inner">
+      <a href="#home" class="logo-wrap footer-logo">
+        <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="20,2 38,11 38,29 20,38 2,29 2,11" stroke="#99FFCC" stroke-width="2" fill="none"/>
+          <text x="20" y="25" text-anchor="middle" font-family="Clash Display, sans-serif" font-size="11" font-weight="800" fill="#99FFCC">W</text>
+        </svg>
+        <span class="logo-name">WebCraft</span>
+      </a>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#kinds" class="nav-link">Kinds</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#order" class="nav-link">Order</a>
+      </nav>
+      <div class="footer-social">
+        <a href="mailto:aliamirchoudhary@gmail.com" class="social-btn" aria-label="Email" title="aliamirchoudhary@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
+        </a>
+        <a href="https://www.facebook.com/share/177cJ6ccx3/" class="social-btn" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a href="https://www.instagram.com/maacmarketingservice/" class="social-btn" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        <a href="https://x.com/maacaffliate?t=vc7ALr4cu8ciZkAfUTeR5A&s=09" class="social-btn" aria-label="X"><svg viewBox="0 0 24 24"><path d="M4 4l16 16M20 4L4 20"/></svg></a>
+        <a href="https://www.linkedin.com/in/muhammad-ali-aamir2558" class="social-btn" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+        <a href="https://github.com/aliamirchoudhary" class="social-btn" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+        <a href="https://www.fiverr.com/s/2Kg9QKV" class="social-btn" aria-label="Fiverr" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24"><text x="4" y="18" font-size="14" font-weight="bold" fill="currentColor">F</text></svg> </a>
+
+      </div>
+      <p class="footer-copy">© 2026 WebCraft. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ===================== MODALS ===================== -->
+
+  <!-- Service Modals -->
+  <div class="modal-overlay" id="modal-frontend" role="dialog" aria-modal="true" aria-labelledby="modal-frontend-title" hidden>
+    <div class="modal">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <div class="modal-header">
+        <h3 id="modal-frontend-title">Frontend Package</h3>
+        <span class="modal-price">Starting at $299</span>
+      </div>
+      <ul class="modal-features">
+        <li>Custom responsive HTML5 / CSS3 layout</li>
+        <li>Vanilla JS or React-based interactivity</li>
+        <li>Mobile-first, cross-browser compatible</li>
+        <li>Smooth animations & transitions</li>
+        <li>SEO-friendly semantic markup</li>
+        <li>Performance optimized (Lighthouse 90+)</li>
+        <li>Up to 5 pages included</li>
+        <li>Source code & full asset delivery</li>
+      </ul>
+      <button class="btn btn-primary modal-order-btn" data-service="Frontend">Order This Package</button>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-backend" role="dialog" aria-modal="true" aria-labelledby="modal-backend-title" hidden>
+    <div class="modal">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <div class="modal-header">
+        <h3 id="modal-backend-title">Backend Package</h3>
+        <span class="modal-price">Starting at $399</span>
+      </div>
+      <ul class="modal-features">
+        <li>Node.js / Express or chosen stack</li>
+        <li>REST API design & implementation</li>
+        <li>Database design (SQL or NoSQL)</li>
+        <li>User authentication & authorization</li>
+        <li>Secure environment configuration</li>
+        <li>Server deployment (VPS / cloud)</li>
+        <li>API documentation included</li>
+        <li>30-day post-launch support</li>
+      </ul>
+      <button class="btn btn-primary modal-order-btn" data-service="Backend">Order This Package</button>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-fullstack" role="dialog" aria-modal="true" aria-labelledby="modal-fullstack-title" hidden>
+    <div class="modal">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <div class="modal-header">
+        <h3 id="modal-fullstack-title">Frontend + Backend</h3>
+        <span class="modal-price">Starting at $599</span>
+      </div>
+      <ul class="modal-features">
+        <li>Everything in Frontend & Backend packages</li>
+        <li>Fully integrated front-to-back solution</li>
+        <li>User accounts & session management</li>
+        <li>Dynamic content with database-driven pages</li>
+        <li>File upload / media management</li>
+        <li>Email notification integration</li>
+        <li>Staging environment setup</li>
+        <li>60-day post-launch support</li>
+      </ul>
+      <button class="btn btn-primary modal-order-btn" data-service="Full-Stack">Order This Package</button>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-fullstackadmin" role="dialog" aria-modal="true" aria-labelledby="modal-fullstackadmin-title" hidden>
+    <div class="modal">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <div class="modal-header">
+        <h3 id="modal-fullstackadmin-title">Full-Stack + Admin Dashboard</h3>
+        <span class="modal-price">Starting at $899</span>
+      </div>
+      <ul class="modal-features">
+        <li>Everything in Full-Stack package</li>
+        <li>Custom admin panel (CRUD operations)</li>
+        <li>Role-based access control (RBAC)</li>
+        <li>Analytics & reporting dashboard</li>
+        <li>Content management interface</li>
+        <li>User management system</li>
+        <li>Audit logs & activity tracking</li>
+        <li>90-day post-launch support</li>
+      </ul>
+      <button class="btn btn-primary modal-order-btn" data-service="Full-Stack + Admin">Order This Package</button>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-maintenance" role="dialog" aria-modal="true" aria-labelledby="modal-maintenance-title" hidden>
+    <div class="modal">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <div class="modal-header">
+        <h3 id="modal-maintenance-title">Maintenance Plan</h3>
+        <span class="modal-price">Starting at $79/mo</span>
+      </div>
+      <ul class="modal-features">
+        <li>Monthly content & plugin updates</li>
+        <li>Daily automated backups</li>
+        <li>Uptime monitoring (24/7 alerts)</li>
+        <li>Security scans & patch management</li>
+        <li>Performance monitoring & optimization</li>
+        <li>Up to 2 hours of change requests/month</li>
+        <li>Priority email & chat support</li>
+        <li>Monthly health report delivered</li>
+      </ul>
+      <button class="btn btn-primary modal-order-btn" data-service="Maintenance">Order This Package</button>
+    </div>
+  </div>
+
+  <!-- Kind Modals -->
+  <div class="modal-overlay" id="modal-kind-menu" role="dialog" aria-modal="true" aria-labelledby="modal-kind-menu-title" hidden>
+    <div class="modal">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <div class="modal-kind-preview">
+        <div class="kind-preview-img">
+          <svg viewBox="0 0 200 130" xmlns="http://www.w3.org/2000/svg"><rect width="200" height="130" fill="#2a2a2a"/><rect x="10" y="10" width="80" height="50" rx="4" fill="#333"/><rect x="15" y="15" width="70" height="8" rx="2" fill="#99FFCC" opacity="0.3"/><rect x="15" y="27" width="50" height="4" rx="2" fill="#555"/><rect x="15" y="35" width="60" height="4" rx="2" fill="#555"/><rect x="15" y="43" width="45" height="4" rx="2" fill="#555"/><rect x="100" y="10" width="90" height="50" rx="4" fill="#333"/><rect x="105" y="15" width="80" height="40" rx="2" fill="#2a2a2a"/><text x="145" y="40" text-anchor="middle" font-size="9" fill="#99FFCC" opacity="0.5">Photo</text><rect x="10" y="70" width="180" height="50" rx="4" fill="#333"/><rect x="15" y="75" width="170" height="8" rx="2" fill="#99FFCC" opacity="0.3"/><rect x="15" y="88" width="80" height="4" rx="2" fill="#555"/><rect x="15" y="96" width="100" height="4" rx="2" fill="#555"/><rect x="15" y="104" width="60" height="4" rx="2" fill="#555"/></svg>
+        </div>
+      </div>
+      <h3 id="modal-kind-menu-title">Menu / Restaurant Website</h3>
+      <ul class="modal-features">
+        <li>Digital menu with categories & photos</li>
+        <li>Online reservation / booking system</li>
+        <li>Online ordering & delivery integration</li>
+        <li>Gallery & chef specials section</li>
+        <li>Location map & opening hours</li>
+        <li>Customer reviews integration</li>
+        <li>Mobile-optimized for on-the-go diners</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-kind-portfolio" role="dialog" aria-modal="true" aria-labelledby="modal-kind-portfolio-title" hidden>
+    <div class="modal">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <div class="modal-kind-preview">
+        <div class="kind-preview-img">
+          <svg viewBox="0 0 200 130" xmlns="http://www.w3.org/2000/svg"><rect width="200" height="130" fill="#2a2a2a"/><rect x="10" y="10" width="180" height="60" rx="4" fill="#333"/><circle cx="40" cy="40" r="20" fill="#2a2a2a"/><text x="40" y="45" text-anchor="middle" font-size="10" fill="#99FFCC" opacity="0.5">Avatar</text><rect x="70" y="20" width="110" height="8" rx="2" fill="#99FFCC" opacity="0.5"/><rect x="70" y="32" width="80" height="4" rx="2" fill="#555"/><rect x="70" y="40" width="90" height="4" rx="2" fill="#555"/><rect x="70" y="48" width="70" height="4" rx="2" fill="#555"/><rect x="10" y="78" width="55" height="42" rx="4" fill="#333"/><rect x="73" y="78" width="55" height="42" rx="4" fill="#333"/><rect x="136" y="78" width="54" height="42" rx="4" fill="#333"/><text x="37" y="103" text-anchor="middle" font-size="8" fill="#99FFCC" opacity="0.3">Project</text><text x="100" y="103" text-anchor="middle" font-size="8" fill="#99FFCC" opacity="0.3">Project</text><text x="163" y="103" text-anchor="middle" font-size="8" fill="#99FFCC" opacity="0.3">Project</text></svg>
+        </div>
+      </div>
+      <h3 id="modal-kind-portfolio-title">Portfolio Website</h3>
+      <ul class="modal-features">
+        <li>Hero section with personal branding</li>
+        <li>Filterable project showcase grid</li>
+        <li>Animated skill bars / tech stack</li>
+        <li>Testimonials / client reviews</li>
+        <li>Downloadable CV / resume section</li>
+        <li>Contact form with social links</li>
+        <li>Dark / light mode toggle</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-kind-business" role="dialog" aria-modal="true" aria-labelledby="modal-kind-business-title" hidden>
+    <div class="modal">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <div class="modal-kind-preview">
+        <div class="kind-preview-img">
+          <svg viewBox="0 0 200 130" xmlns="http://www.w3.org/2000/svg"><rect width="200" height="130" fill="#2a2a2a"/><rect x="0" y="0" width="200" height="30" fill="#333"/><rect x="10" y="10" width="40" height="10" rx="2" fill="#99FFCC" opacity="0.5"/><rect x="110" y="12" width="20" height="6" rx="2" fill="#555"/><rect x="135" y="12" width="20" height="6" rx="2" fill="#555"/><rect x="160" y="12" width="30" height="6" rx="2" fill="#99FFCC" opacity="0.3"/><rect x="0" y="30" width="200" height="50" fill="#2d2d2d"/><rect x="20" y="42" width="100" height="10" rx="2" fill="#99FFCC" opacity="0.4"/><rect x="20" y="57" width="70" height="5" rx="2" fill="#555"/><rect x="155" y="47" width="35" height="12" rx="6" fill="#99FFCC" opacity="0.4"/><rect x="10" y="88" width="55" height="32" rx="4" fill="#333"/><rect x="73" y="88" width="55" height="32" rx="4" fill="#333"/><rect x="136" y="88" width="54" height="32" rx="4" fill="#333"/></svg>
+        </div>
+      </div>
+      <h3 id="modal-kind-business-title">Business Website</h3>
+      <ul class="modal-features">
+        <li>Professional hero with clear CTA</li>
+        <li>Services / product showcase pages</li>
+        <li>Team & about us section</li>
+        <li>Testimonials & case studies</li>
+        <li>Blog / news integration</li>
+        <li>Lead capture & contact forms</li>
+        <li>Google Analytics & SEO setup</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-kind-school" role="dialog" aria-modal="true" aria-labelledby="modal-kind-school-title" hidden>
+    <div class="modal">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <div class="modal-kind-preview">
+        <div class="kind-preview-img">
+          <svg viewBox="0 0 200 130" xmlns="http://www.w3.org/2000/svg"><rect width="200" height="130" fill="#2a2a2a"/><polygon points="100,10 190,50 190,130 10,130 10,50" fill="#333"/><rect x="80" y="70" width="40" height="60" fill="#2a2a2a"/><rect x="30" y="60" width="40" height="30" rx="2" fill="#2a2a2a"/><rect x="130" y="60" width="40" height="30" rx="2" fill="#2a2a2a"/><text x="100" y="40" text-anchor="middle" font-size="9" fill="#99FFCC" opacity="0.5">Logo</text></svg>
+        </div>
+      </div>
+      <h3 id="modal-kind-school-title">School / Hospital Website</h3>
+      <ul class="modal-features">
+        <li>Department / faculty directory</li>
+        <li>Event calendar & announcements</li>
+        <li>Admissions / appointment portal</li>
+        <li>News & publications section</li>
+        <li>Accessible design (WCAG 2.1 AA)</li>
+        <li>Multi-language support option</li>
+        <li>Emergency notices & alerts system</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-kind-hotel" role="dialog" aria-modal="true" aria-labelledby="modal-kind-hotel-title" hidden>
+    <div class="modal">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <div class="modal-kind-preview">
+        <div class="kind-preview-img">
+          <svg viewBox="0 0 200 130" xmlns="http://www.w3.org/2000/svg"><rect width="200" height="130" fill="#2a2a2a"/><rect x="0" y="0" width="200" height="70" fill="#333"/><text x="100" y="40" text-anchor="middle" font-size="12" fill="#99FFCC" opacity="0.3">Hero Image</text><rect x="60" y="50" width="80" height="20" rx="10" fill="#99FFCC" opacity="0.3"/><text x="100" y="63" text-anchor="middle" font-size="8" fill="#1e1e1e" font-weight="bold">Book Now</text><rect x="10" y="78" width="55" height="42" rx="4" fill="#333"/><rect x="73" y="78" width="55" height="42" rx="4" fill="#333"/><rect x="136" y="78" width="54" height="42" rx="4" fill="#333"/><text x="37" y="103" text-anchor="middle" font-size="7" fill="#99FFCC" opacity="0.3">Room Type</text><text x="100" y="103" text-anchor="middle" font-size="7" fill="#99FFCC" opacity="0.3">Room Type</text><text x="163" y="103" text-anchor="middle" font-size="7" fill="#99FFCC" opacity="0.3">Room Type</text></svg>
+        </div>
+      </div>
+      <h3 id="modal-kind-hotel-title">Hotel Website</h3>
+      <ul class="modal-features">
+        <li>Room showcase with photo galleries</li>
+        <li>Real-time availability & booking engine</li>
+        <li>Pricing tiers & package deals</li>
+        <li>Amenities & facilities section</li>
+        <li>Virtual tour integration option</li>
+        <li>Guest reviews & ratings display</li>
+        <li>Multi-currency & language support</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
